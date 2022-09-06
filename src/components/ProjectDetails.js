@@ -10,7 +10,7 @@ function ProjectDetails(projectName, shortDesc, projectImage, projectAlt, repoLi
                 <img src={projectImage} alt={projectAlt} />
             </div>
             <div>
-                <h5>{shortDesc}</h5>
+                <p>{shortDesc}</p>
             </div>
             <div>
                 <a href={repoLink}>
