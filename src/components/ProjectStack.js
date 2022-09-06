@@ -10,8 +10,13 @@ function ProjectStack(projectLangList) {
     return(
         // Convert the array of languages passed down from main projects page
         // to an HTML list
-        projectLangList.map((language) => 
-        <li id={language} key={language}>{language}</li>)
+        <div>
+            <ul>
+                {projectLangList.map((language) => 
+                <li id={language} key={language}>{language}</li>)}
+            </ul>
+        </div>
+        
     );
 
 }
