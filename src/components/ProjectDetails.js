@@ -6,9 +6,7 @@ function ProjectDetails(projectName, shortDesc, projectImage, projectAlt, repoLi
             <div className='project-name-wrapper'>
                 <h3 className='project-name'>{projectName}</h3>
             </div>
-            <div>
-                <img src={projectImage} alt={projectAlt} />
-            </div>
+            <img className='project-image' src={projectImage} alt={projectAlt} />
             <div className='short-description'>
                 <p>{shortDesc}</p>
             </div>
