@@ -1,6 +1,9 @@
 import './App.css';
 import NavBar from './components/NavBar';
 import {Routes, Route} from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import ProjectPage from './pages/ProjectPage';
 
 
 function App() {
@@ -8,9 +11,9 @@ function App() {
     <div className='app'>
       <NavBar/>
       <Routes>
-        <Route path="/"/>
-        <Route path="/about"/>
-        <Route path="/projects"/>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/projects" element={<ProjectPage staticMode={true} />} />
       </Routes>
     </div>
   );
