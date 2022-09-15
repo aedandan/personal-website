@@ -15,15 +15,15 @@ const projectData = {
     },
     project3:{
         name: 'Discord Event Scheduler',
-        desc: 'A tool to help members of a Discord server schedule gaming events.',
-        alt: 'Map of UW campus',
+        desc: 'A tool to help members of a Discord server schedule gaming events',
+        alt: '',
         link: '',
         stack: ['Java'],
     },
     project4:{
         name: 'Campus Path Finder',
         desc: '(UW Class Project) A full stack web app designed to help users navigate the UW campus',
-        alt: '',
+        alt: 'Map of UW campus',
         link: '',
         stack: ['Java', 'TypeScript', 'React', 'CSS', 'HTML'],
     },
