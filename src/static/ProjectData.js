@@ -44,5 +44,5 @@ const projectData = {
 }
 
 export default function getProjectData() {
-
+    return projectData;
 }
