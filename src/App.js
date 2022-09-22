@@ -1,4 +1,5 @@
-import './App.css';
+import './css/App.scss';
+import './css/components/navbar.scss';
 import NavBar from './components/NavBar';
 import {Routes, Route} from 'react-router-dom';
 import HomePage from './pages/HomePage';
