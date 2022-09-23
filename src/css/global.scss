@@ -1,0 +1,17 @@
+@import "./colors";
+
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $palatinate-purple;
+    color: white
+}
+
+a {
+    color: $lavender-blue;
+    &:visited {
+        color: $lavender-blue;
+    }
+        
+}
