@@ -3,23 +3,23 @@ import {Link} from 'react-router-dom';
 
 function NavBar() {
     return(
-        <div className='nav-bar-wrapper'>
-            <div className='nav-bar-link'>
+        <ul id='nav-bar-wrapper'>
+            <li id='nav-bar-link'>
                 <Link to="/">
                     Home
                 </Link>
-            </div>
-            <div className='nav-bar-link'>
+            </li>
+            <li id='nav-bar-link'>
                 <Link to="/about">
                     About
                 </Link>
-            </div>
-            <div className='nav-bar-link'>
+            </li>
+            <li id='nav-bar-link'>
                 <Link to="/projects">
                     Projects
                 </Link>
-            </div>
-        </div>
+            </li>
+        </ul>
     );
 }
 
