@@ -1,4 +1,10 @@
-@import "./colors.scss";
+@import "./colors";
+@import "./global.scss";
+
+
+@import "./pages/homepage.scss";
+
+
 
 .App {
   text-align: center;

@@ -1,20 +1,26 @@
-@import '../colors.scss';
-
 #nav-bar-wrapper {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     flex: auto;
+    align-items: baseline;
     justify-content: space-evenly;
-    align-items: flex-start;
-    background-color: $palatinate-purple;
-    
-    #a {
-        color: white;
+    list-style: none;
+    margin-left: 50vw;
+    padding: 0;
+    font-size: 32pt;
+    width: 50%;
 
-        &:visited {
-            color: white;
-        }
+    #nav-bar-link {
+        padding-right: 2.5vw;
+        padding-left: 2.5vw;
+        background-color: $cerise;
+        border-radius: 5vh;
+        border: solid white;
+
+        
+        &:hover {
             
+        }
     }
 }
 

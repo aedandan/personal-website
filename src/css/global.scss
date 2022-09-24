@@ -1,17 +1,19 @@
-@import "./colors";
+@import url(https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,700;1,400;1,700&display=swap);
 
 html {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: $palatinate-purple;
+    font-family: 'Montserrat Alternates', sans-serif;
     color: white
 }
 
 a {
-    color: $lavender-blue;
+    color: white;
     &:visited {
-        color: $lavender-blue;
+        color: white;
     }
+    
         
 }
