@@ -1,0 +1,15 @@
+.project-tile-stack {
+    ul {
+        display: flex;  
+        flex-direction: row;
+        flex: auto;
+    }
+    
+    li {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
