@@ -9,7 +9,6 @@ function ProjectPage(staticMode) {
     React.useEffect(() => {
         if (staticMode) {
             setProjects(getStaticProjects);
-
         } else {
             // TODO: Dynamic project rendering on page load
 
@@ -18,17 +17,17 @@ function ProjectPage(staticMode) {
 
 
     return (
-        <>
+        <div className='project-list'>
             {projects.map((project) => (
-                <React.Fragment key={project.id}>
-                    <ProjectStack projectLangList={project.stack} />
+                <div className='project-tile' key={project.id}>
                     <ProjectDetails projectName={project.name} 
                     shortDesc={project.desc} /*projectImage={}*/ 
                     projectAlt={project.alt} 
                     repoLink={project.link} />
-                </React.Fragment>
+                    <ProjectStack projectLangList={project.stack} />
+                </div>
             ))}
-        </>
+        </div>
         
     );
 }
