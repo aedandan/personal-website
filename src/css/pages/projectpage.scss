@@ -1,0 +1,31 @@
+@import "../components/projectstack.scss";
+@import "../components/projectdetails.scss";
+
+.project-tile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5vh;
+    border: solid thick;
+    border-color: white;
+    padding: 2vh;
+    border-radius: 5vh;
+    background-color: $palatinate-purple;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.project-tile-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
