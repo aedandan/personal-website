@@ -1,0 +1,27 @@
+.project-name-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    a {
+        font-size: calc(1em + 1vw);
+    }
+}
+
+.short-description {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    max-width: 70%;
+    flex-grow: 1;
+}
+
+.project-name {
+    flex-grow: 1;
+    width: 50%;
+    font-size: calc(1em + 1vw);
+}
+
+p {
+    font-size: calc(1em + 1vw);
+}
