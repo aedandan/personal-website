@@ -1,14 +1,25 @@
 .project-tile-stack {
+    margin-right: 20%;
+    max-width: 50%;
     ul {
         display: flex;  
         flex-direction: row;
         flex: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
     }
     
     li {
+        font-size: 24px;
         list-style: none;
         display: flex;
-        flex-wrap: wrap;
+        margin: 0.5vw;
+        padding: 2vh 1vw;
+        border: solid 0.5vh;
+        border-color: white;
+        border-radius: 3vh;
+        background-color: $auburn;
     }
 
 }
