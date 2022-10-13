@@ -1,16 +1,20 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 function HomePage() {
     return(
-        <div>
-            <img 
-            src=''
-            alt='Aedan wearing'/>
-            <p>Welcome to my portfolio site! My name is Aedan, 
-                and I use they/them pronouns. See About for more!</p>
-            <img src=''
-            alt='Aedan' />
-        </div>
+        <motion.div>
+            <h1>Welcome to my portfolio site!</h1>
+            <div id="central-section">
+                <img 
+                src='/img/aedan_turn.JPG'
+                alt='Aedan wearing'/>
+                
+                <p className='main-text'> My name is Aedan, 
+                    and I use they/them pronouns. <br /> I am a software engineer. </p>
+            </div>
+        </motion.div>
+        
     );
 }
 
