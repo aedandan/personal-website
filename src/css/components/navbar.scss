@@ -16,8 +16,7 @@
 
         
         border-radius: 0 0 2vh 2vh;
-
-        
+  
     }
 
     .hidden {
@@ -26,7 +25,7 @@
     }
     
 
-    #nav-bar-link {
+    .nav-bar-link {
         padding: min(1vh, 1rem);
         margin: .5rem;
     }
@@ -54,16 +53,14 @@
     list-style: none;
     font-size: 2em;
     padding-right: 3vw;
-    justify-content: right;
 
-    #nav-bar-link {
+    .nav-bar-link {
         padding-right: 3vw;
         padding-left: 3vw;
         background-color: $palatinate-purple;
         border-radius: 5vh;
         border: solid white;
         margin-right: 2vw;
-        
         
         &:hover {
             
@@ -72,10 +69,7 @@
 
     a {
         text-decoration: none;
-        
     }
-    
-    
 }
 
 .mobile-nav-toggle {
@@ -85,7 +79,6 @@
 #nav-menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: baseline;
 
     h1 {
