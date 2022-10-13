@@ -1,29 +1,109 @@
+@mixin nav-bar-hamburger {
+    #nav-bar-wrapper {
+        position: fixed;
+        inset: 0 0 60% 0;
+        width: 100%;
+        flex-direction: column;
+        padding: 1em;
+        margin: 0;
+        z-index: 100;
+        font-size: 1.5em;
+
+        @supports (backdrop-filter: blur(1rem)) {
+            background: hsl(203, 36%, 62%, 0.6);
+            backdrop-filter: blur(1rem);
+        }
+
+        
+        border-radius: 0 0 2vh 2vh;
+
+        
+    }
+
+    .hidden {
+        transform: translateY(-100%);
+        transition: transform 400ms ease-out;
+    }
+    
+
+    #nav-bar-link {
+        padding: min(1vh, 1rem);
+        margin: .5rem;
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        z-index: 1001;
+        width: 3rem;
+        border: 0;
+        aspect-ratio: 1;
+        background-repeat: no-repeat;
+        top: 2rem;
+        right: 2rem;
+        background: url("../../../public/img/hamburg.svg");
+        background-color: white;
+        border-radius: 1vh;
+    }
+}
+
 #nav-bar-wrapper {
     display: flex;
     flex-direction: row;
-    flex: auto;
     align-items: baseline;
-    justify-content: space-evenly;
     list-style: none;
-    margin-left: 50vw;
-    padding: 0;
-    font-size: 24pt;
-    width: 50%;
+    font-size: 2em;
+    padding-right: 3vw;
+    justify-content: right;
 
     #nav-bar-link {
-        padding-top: 2.5vh;
-        padding-bottom: 2.5vh;
         padding-right: 3vw;
         padding-left: 3vw;
         background-color: $palatinate-purple;
         border-radius: 5vh;
         border: solid white;
-
+        margin-right: 2vw;
+        
         
         &:hover {
             
         }
     }
+
+    a {
+        text-decoration: none;
+        
+    }
+    
+    
 }
+
+.mobile-nav-toggle {
+    display: none;
+}
+
+#nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+
+    h1 {
+        padding-left: 1em;
+    }
+}
+
+@media (max-width: 1020px) {
+    @include nav-bar-hamburger;
+
+    
+
+    .expanded {
+        transform: translateY(0%);
+        transition: transform 400ms ease-in;
+    }
+}
+
+
 
 
