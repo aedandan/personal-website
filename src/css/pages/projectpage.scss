@@ -20,12 +20,16 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin: 2.5vh;
 }
 
 .project-tile-wrapper {
     display: flex;
     flex-direction: column;
-    width: 65%;
+}
+
+@media screen and (max-width: 35em) {
+    .project-tile {
+        flex-direction: column;
+    }
 }
