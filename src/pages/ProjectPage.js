@@ -8,23 +8,31 @@ function ProjectPage(staticMode) {
 
     React.useEffect(() => {
         if (staticMode) {
-            setProjects(getStaticProjects);
+            setTimeout(function(){
+                setProjects(getStaticProjects)
+            }, 1000);
         } else {
             // TODO: Dynamic project rendering on page load
 
         }
     }, [staticMode]);
 
-
     return (
-        <div className='project-list'>
+        <div 
+        className='project-list'>
             {projects.map((project) => (
-                <div className='project-tile' key={project.id}>
-                    <ProjectDetails projectName={project.name} 
+                <div 
+                className='project-tile' 
+                key={project.id}>
+                    <ProjectDetails 
+                    projectName={project.name} 
                     shortDesc={project.desc} /*projectImage={}*/ 
                     projectAlt={project.alt} 
-                    repoLink={project.link} />
-                    <ProjectStack projectLangList={project.stack} />
+                    repoLink={project.link} 
+                    />
+                    <ProjectStack 
+                    projectLangList={project.stack} 
+                    />
                 </div>
             ))}
         </div>
