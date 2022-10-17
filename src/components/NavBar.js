@@ -13,24 +13,30 @@ function NavBar() {
     }
 
     return(
-        <div id="nav-menu">
+        <div 
+        id="nav-menu">
             <h1>Aedan McCall</h1>
             <button
             className="mobile-nav-toggle"
             aria-controls="nav-bar-wrapper"
             aria-expanded={isExpanded ? "true" : "false"}
-            onClick={buttonToggle}>
-                <span className="sr-only">Menu</span>
+            onClick={buttonToggle}
+            >
+                <span 
+                className="sr-only"
+                >Menu
+                </span>
             </button>
             <ul 
             id='nav-bar-wrapper'
-            className={isExpanded ? 'expanded' : 'hidden'}>
+            className={isExpanded ? 'expanded' : 'hidden'}
+            >
                 <li 
                 className='nav-bar-link'>
                     <Link 
                     onClick={closeMenu} 
                     to="/"
-                    >
+                >
                         Home
                     </Link>
                 </li>
@@ -39,7 +45,7 @@ function NavBar() {
                     <Link 
                     onClick={closeMenu}
                     to="/about"
-                    >
+                >
                         About
                     </Link>
                 </li>
@@ -48,7 +54,7 @@ function NavBar() {
                     <Link 
                     onClick={closeMenu} 
                     to="/projects"
-                    >
+                >
                         Projects
                     </Link>
                 </li>
